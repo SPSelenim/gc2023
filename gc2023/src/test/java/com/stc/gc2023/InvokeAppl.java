@@ -22,13 +22,13 @@ public class InvokeAppl {
 			driver.manage().window().maximize();
 			driver.findElement(By.xpath("//input[@id='fname']")).sendKeys("myFirstName11");
 			driver.findElement(By.id("lname")).sendKeys("pwd");
-			String strFName=driver.getCurrentUrl();
-			//driver.findElement(By.id("fname")).clear();
-			String strFName1=driver.findElement(By.id("fname")).getAttribute("value");
-			System.out.println("******strName : *****"+strFName+strFName1);
+			String strFName = driver.getCurrentUrl();
+			// driver.findElement(By.id("fname")).clear();
+			String strFName1 = driver.findElement(By.id("fname")).getAttribute("value");
+			System.out.println("******strName : *****" + strFName + strFName1);
 			Thread.sleep(3000);
-	//		driver.close();
-		driver.quit();
+			// driver.close();
+			driver.quit();
 		} catch (Exception e) {
 			System.out.println("Message : " + e.getMessage());
 			System.out.println("Stack Trace : " + e.getStackTrace().toString());
